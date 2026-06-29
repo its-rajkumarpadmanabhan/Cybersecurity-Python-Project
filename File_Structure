@@ -1,0 +1,35 @@
+📦 Security-Soc-Prototype
+ ┣ 📂 env/                                 # 🐍 Your fresh Python 3.14 Virtual Environment
+ ┃ ┣ 📂 Lib/site-packages/                 # Installed packages (Django, PyMongo, etc.)
+ ┃ ┗ 📂 Scripts/                           # Environment activation binaries
+ ┃
+ ┗ 📂 phase_03_Opensource/                  # Main Project Module Folder
+   ┗ 📂 securitysoc/                       # Django Project Root Directory
+     ┃
+     ┣ 📂 securitysoc/                     # ⚙️ Core Project Configuration Folder
+     ┃ ┣ 📜 __init__.py
+     ┃ ┣ 📜 asgi.py
+     ┃ ┣ 📜 settings.py                    # Project configurations & INSTALLED_APPS
+     ┃ ┣ 📜 wsgiconf.py
+     ┃ ┗ 📜 urls.py                        # Root URL router paths
+     ┃
+     ┣ 📂 web_panel/                       # Central Web Routing App
+     ┃ ┣ 📜 __init__.py
+     ┃ ┗ 📜 urls.py                        # Imports views from dashboard/
+     ┃
+     ┣ 📂 dashboard/                       # 🛡️ Main SOC Operations Application
+     ┃ ┣ 📂 templates/                     # UI Layout Repositories
+     ┃ ┃ ┗ 📂 dashboard/
+     ┃ ┃   ┣ 📜 log.html                   # Log workspace with search & pop-up modals
+     ┃ ┃   ┣ 📜 dashboard.html             # Chart.js analytics command interface
+     ┃ ┃   ┣ 📜 login.html                 # Analyst gate access panel
+     ┃ ┃   ┗ 📜 signup.html                # Account provisioning system
+     ┃ ┃
+     ┃ ┣ 📜 __init__.py
+     ┃ ┣ 📜 apps.py                        # ⚙️ Initializes the Daemon thread at boot
+     ┃ ┣ 📜 services.py                    # 🧠 Contains file folder monitoring & threat engines
+     ┃ ┣ 📜 views.py                       # Serves views and queries data from MongoDB
+     ┃ ┣ 📜 models.py
+     ┃ ┗ 📜 tests.py
+     ┃
+     ┗ 📜 manage.py                        # 🚀 Single Terminal Command Execution Script
